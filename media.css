@@ -1,0 +1,29 @@
+/* MEDIA REQUESTS */
+@media (max-width:900px) {
+	
+	header, section, footer {
+		margin:0;
+		padding:0;
+	}
+
+	header .grid-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-row-gap:20px;
+		grid-template-areas: 
+		"logo title"
+		"search search"
+		"menu menu";
+		min-width:300px;
+	}
+	.grid-item-menu {
+		grid-template-columns:1fr;
+		grid-template-rows:auto;
+		}
+		
+	.grid-item-menu a {
+		border-bottom: rgb(130,130,105) solid 1px;
+	}
+
+
+}

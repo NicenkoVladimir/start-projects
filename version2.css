@@ -1,0 +1,59 @@
+
+.grid-container {
+	display:grid;
+}
+
+.grid-item {
+	background: rgb(205,224,172);
+	font-family: Calibri;
+	font-size:10pt;
+	color:#543123;
+}
+
+body {
+	grid-row-gap:10px;
+	grid-template-areas:
+	"header"
+	"main"
+	"forms"
+	"footer";
+	padding:10px 5px;
+	grid-template-rows: 20% 20% 50% 10%;
+	grid-template-columns: auto;
+}
+
+header {
+	grid-area:header;
+	grid-template-areas:
+	"logo title search"
+	"logo menu menu";
+}
+
+section.main {
+	grid-area:main;
+}
+
+section.forms {
+	grid-area:forms
+}
+
+footer {
+	grid-area:footer;
+}
+
+.logo {
+	grid-area:logo;
+	border:rgb(130,130,105) solid 1px;
+}
+	
+.title {
+	grid-area:title;
+}
+
+.search {
+	grid-area:search;
+}
+
+.menu {
+	grid-area:menu;
+}
