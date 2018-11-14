@@ -15,7 +15,10 @@
 		"search search"
 		"menu menu";
 		min-width:300px;
+		
+
 	}
+	
 	.grid-item-menu {
 		grid-template-columns:1fr;
 		grid-template-rows:auto;
